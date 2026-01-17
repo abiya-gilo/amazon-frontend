@@ -1,0 +1,109 @@
+/* ===========================
+   AUTH PAGE WRAPPER
+   =========================== */
+.auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+/* ===========================
+   LOGO SECTION
+   =========================== */
+.logoContainer {
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 100px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+/* ===========================
+   SIGN-IN BOX
+   =========================== */
+.container {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.container h1 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.container h5 {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.container input {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #a6a6a6;
+  border-radius: 3px;
+}
+
+/* ===========================
+   BUTTONS
+   =========================== */
+.signInButton {
+  background: #f0c14b;
+  border: 1px solid #a88734;
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.signInButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.registerButton {
+  background: lightgray;
+  border: 1px solid darkgray;
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.registerButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ===========================
+   ERROR MESSAGE
+   =========================== */
+.error {
+  color: #b12704;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* ===========================
+   LOADER WRAPPER
+   =========================== */
+.spinnerWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0;
+}
+

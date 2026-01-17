@@ -1,0 +1,66 @@
+.order {
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 25px;
+  background: white;
+}
+
+.order__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.label {
+  font-size: 12px;
+  color: #555;
+  font-weight: bold;
+}
+
+.orderId {
+  font-size: 12px;
+  color: #007185;
+  word-break: break-all;
+}
+
+.deliveryStatus {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #007600;
+}
+
+.greenDot {
+  width: 10px;
+  height: 10px;
+  background: #007600;
+  border-radius: 50%;
+}
+
+.order__items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.orderItemRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buyAgainButton {
+  background-color: #ffd814;
+  border: 1px solid #fcd200;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.buyAgainButton:hover {
+  background-color: #f7ca00;
+}
