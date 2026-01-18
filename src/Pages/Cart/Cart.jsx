@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import Layout from "../../components/LayOut/LayOut";
-import { DataContext } from "../../components/DataProvider/DataProvider";
-import ProductCard from "../../components/Product/ProductCard";
-import CurrencyFormat from "../../components/CurrencyFormat/CurrencyFormat";
+import Layout from "../../Components/LayOut/LayOut";
+import { DataContext } from "../../Components/DataProvider/DataProvider";
+import ProductCard from "../../Components/Product/ProductCard";
+import CurrencyFormat from "../../Components/CurrencyFormat/CurrencyFormat";
 import { Link } from "react-router-dom";
 import classes from "./Cart.module.css";
 import { Type } from "../../Utility/action.type";
@@ -13,7 +13,7 @@ function Cart() {
 
   const total = basket.reduce(
     (amount, item) => item.price * item.amount + amount,
-    0
+    0,
   );
 
   const increment = (item) => {
