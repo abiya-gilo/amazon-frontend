@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from "react";
-import Layout from "../../Components/LayOut/LayOut";
+import LayOut from "../../Components/LayOut/LayOut";
 import classes from "./Orders.module.css";
 import { db } from "../../Utility/firebase";
 import { DataContext } from "../../Components/DataProvider/DataProvider";
@@ -25,7 +25,7 @@ function Orders() {
         snapshot.docs.map((doc) => ({
           id: doc.id,
           ...doc.data(),
-        }))
+        })),
       );
     });
 
@@ -33,7 +33,7 @@ function Orders() {
   }, [user]);
 
   return (
-    <Layout>
+    <LayOut>
       <div className={classes.orders__container}>
         <h2>Your Orders</h2>
 
@@ -45,7 +45,7 @@ function Orders() {
           orders.map((order) => <OrderCard key={order.id} order={order} />)
         )}
       </div>
-    </Layout>
+    </LayOut>
   );
 }
 

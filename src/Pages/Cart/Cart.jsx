@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import Layout from "../../Components/LayOut/LayOut";
+import LayOut from "../../Components/LayOut/LayOut";
 import { DataContext } from "../../Components/DataProvider/DataProvider";
 import ProductCard from "../../Components/Product/ProductCard";
 import CurrencyFormat from "../../Components/CurrencyFormat/CurrencyFormat";
@@ -31,7 +31,7 @@ function Cart() {
   };
 
   return (
-    <Layout>
+    <LayOut>
       <section className={classes.container}>
         <div className={classes.cart_container}>
           <h2>Hello {user?.name || ""}</h2>
@@ -81,7 +81,7 @@ function Cart() {
           </div>
         )}
       </section>
-    </Layout>
+    </LayOut>
   );
 }
 

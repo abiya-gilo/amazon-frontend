@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import classes from "./Payment.module.css";
-import Layout from "../../Components/LayOut/LayOut";
+import LayOut from "../../Components/LayOut/LayOut";
 import { DataContext } from "../../Components/DataProvider/DataProvider";
 import ProductCard from "../../Components/Product/ProductCard";
 import { useStripe, useElements, CardElement } from "@stripe/react-stripe-js";
@@ -32,7 +32,7 @@ function Payment() {
   useEffect(() => {
     const getClientSecret = async () => {
       const response = await axiosInstance.post(
-        `/payment/create?total=${total * 100}`
+        `/payment/create?total=${total * 100}`,
       );
       setClientSecret(response.data.clientSecret);
     };
@@ -77,7 +77,7 @@ function Payment() {
   };
 
   return (
-    <Layout>
+    <LayOut>
       <div className={classes.payment__header}>
         Checkout ({basket.length}) items
       </div>
@@ -169,7 +169,7 @@ function Payment() {
           </div>
         </aside>
       </div>
-    </Layout>
+    </LayOut>
   );
 }
 
