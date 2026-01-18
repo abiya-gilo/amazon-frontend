@@ -6,6 +6,7 @@ import Routing from "./Routing";
 function App() {
   return (
     <Router>
+      <Header />
       <Routing />
     </Router>
   );
