@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import styles from "./Header.module.css";
-import { DataContext } from "../dataProvider/DataProvider";
+import { DataContext } from "../DataProvider/DataProvider";
 import { Link, useNavigate } from "react-router-dom";
 import { BiCart } from "react-icons/bi";
 import LowerHeader from "./LowerHeader";
